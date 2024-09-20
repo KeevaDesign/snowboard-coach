@@ -1,0 +1,109 @@
+.header-banner-about {
+  width: 100%;
+  background-color: var(--color-primary);
+  background-image: url(../../images/bg_mt2.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-me-pic {
+  background-image: url(../../images/about-me3.jpg);
+  width: 60%;
+  height: 600px;
+  margin: 4rem auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px #d6d6d6;
+}
+
+.about-me-content {
+  margin: 4rem auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+.achievement-card {
+  text-align: center;
+  margin: 2rem auto;
+  background-color: var(--bg-color-grey10);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 60%;
+
+  h2 {
+    color: var(--text-color-unchanged);
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: var(--text-color-unchanged);
+    margin-top: 1.2rem;
+  }
+
+  p {
+    color: var(--text-color-unchanged);
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem auto;
+
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /*** Mobile styles here ***/
+  .about-me-pic {
+    width: 100%;
+    height: 500px;
+    margin: 4rem auto;
+    background-size: cover;
+    background-position: center;
+  }
+  .about-me-content {
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .achievement-card {
+    width: 100%;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet styles here */
+}
+
+@media (min-width: 1024px) {
+  /* Desktop styles here */
+}

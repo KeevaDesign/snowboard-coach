@@ -1,0 +1,336 @@
+// Hero Banner
+.hero-banner {
+  width: 100%;
+  height: 680px;
+  background-image: url(../../images/main_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+
+  img {
+    width: 400px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-family: "Ubuntu", sans-serif;
+    color: var(--color-secondary);
+    font-style: italic;
+    margin: 1rem;
+  }
+
+  .hero-button {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.hero-features {
+  background-color: var(--bg-color-grey10);
+  width: 100%;
+
+  .hero-features-item {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 2rem;
+  }
+}
+
+// End of Hero Banner
+
+// About ME
+
+.wrapper-aboutme {
+  width: var(--container-width-1g);
+  max-width: 1920px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 6rem auto;
+  overflow: hidden;
+
+  .home-aboutme {
+    background-image: url(../../images/about-me.jpg);
+    width: 500px;
+    height: 100%;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-color: aquamarine;
+  }
+
+  .aboutme-content {
+    width: 50%;
+    padding-bottom: 4rem;
+  }
+  .aboutme-content p {
+    margin: 2rem 0;
+    line-height: 1.3;
+  }
+}
+
+// End of About ME
+
+// Why Section
+.why-container {
+  max-width: 1920px;
+  width: 100%;
+  background-image: url(../../images/bg_mt.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+
+  .title {
+    h1 {
+      padding-top: 6rem;
+      color: white;
+      line-height: 1.3;
+      text-align: center;
+    }
+  }
+
+  .why-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .why-content {
+      width: var(--container-width-1g);
+      display: flex;
+      margin: 4rem 0rem;
+      flex-direction: row;
+      gap: 1rem;
+
+      div {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        flex: 1;
+
+        svg {
+          font-size: 3rem;
+          color: var(--color-primary);
+          margin: 1.2rem;
+        }
+
+        .item-title {
+          font-size: 1.2rem;
+          font-weight: 600;
+          padding-bottom: 1rem;
+        }
+
+        p {
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+// End of Why Section
+
+// Feedback
+.test-title {
+  margin: 6rem auto;
+  text-align: center;
+}
+
+.feedback-container {
+  width: var(--container-width-1g);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8rem 0 1rem 0;
+
+  .feedback-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    position: relative;
+    align-content: center;
+    gap: 2rem;
+    width: 100%;
+
+    .feedback-content {
+      position: relative;
+      padding: 6rem 2rem 2rem 2rem;
+      background-color: #d0d0d0;
+      border-radius: 20px;
+
+      .profile-img img {
+        position: absolute;
+        left: calc(50% - 70px);
+        top: -70px;
+        width: 140px;
+      }
+
+      .feedback-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .left-btn-container {
+    position: relative;
+    top: 50%;
+    left: 0;
+
+    .left-btn {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  .right-btn-container {
+    position: relative;
+    top: 50%;
+    right: 0;
+
+    .right-btn {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.dot-indicator {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem; /* Adjust as needed */
+  margin-bottom: 4rem;
+  z-index: 999;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: #bbb; /* Default color */
+    cursor: pointer;
+  }
+
+  .dot.active {
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Active color */
+  }
+}
+
+// End of Feedback
+
+@media (max-width: 767px) {
+  /*** Mobile styles here ***/
+
+  .hero-banner {
+    h1 {
+      text-align: center;
+    }
+
+    .hero-button {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .hero-features {
+    height: 130px;
+    margin: auto;
+
+    .hero-features-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      line-height: 2rem;
+      text-align: left;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  }
+
+  // About ME
+
+  .wrapper-aboutme {
+    width: var(--container-width-xs);
+    flex-direction: column;
+    gap: 4rem;
+    margin: 4rem auto;
+
+    .home-aboutme {
+      width: 100%;
+      min-height: 400px;
+    }
+
+    .aboutme-content {
+      width: 100%;
+      padding-bottom: 4rem;
+    }
+    .aboutme-content p {
+      margin: 2rem 0;
+    }
+  }
+
+  // Why Section
+  .why-container {
+    width: 100%;
+    padding: 2rem 0;
+
+    .title {
+      h1 {
+        padding-top: 4rem;
+      }
+    }
+
+    .why-wrapper {
+      flex-direction: column;
+
+      .why-content {
+        width: var(--container-width-xs);
+        margin: 4rem 0rem;
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
+  // End of Why Section
+
+  // Feedback
+  .feedback-container {
+    width: var(--container-width-xs);
+
+    .feedback-card {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet styles here */
+}
+
+@media (min-width: 1024px) {
+  /* Desktop styles here */
+}

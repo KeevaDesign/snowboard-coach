@@ -1,0 +1,81 @@
+.header-banner {
+  width: 100%;
+  background-color: var(--color-primary);
+  background-image: url(../../images/bg_snow.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  width: var(--container-width-1g);
+  margin: 4rem auto;
+
+  p {
+    margin: 1rem auto;
+  }
+}
+
+/**** Classes Table ****/
+
+/* Classes Table - desktop  */
+
+.class-wrapper,
+.booking-wrapper {
+  padding: 4rem 8rem;
+}
+
+.class-wrapper p {
+  font-size: 1.2rem;
+}
+
+.class-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.class-table th,
+.class-table td {
+  width: 12.5%;
+  font-size: 1.1rem;
+  border: 2px solid #ffffff;
+  padding: 1rem;
+  text-align: center;
+  background-color: #e4f2f0;
+}
+
+.class-table td i {
+  color: #1b6c73;
+}
+
+.class-table th {
+  color: #ffffff;
+  background-color: #6a9798;
+}
+
+/* Classes Table - mobile  */
+.class-table-wrapper-mobile {
+  padding: 0;
+}
+
+.class-table-mobile th {
+  width: 22%;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #6a9798;
+}
+
+.class-table-mobile td {
+  width: 22%;
+  font-size: 0.9rem;
+  border: 1px solid #ffffff;
+  padding: 1.2rem;
+  text-align: center;
+  background-color: #e4f2f0;
+}
+
+.class-table-mobile td i {
+  color: #1b6c73;
+  font-size: 1.2rem;
+}
