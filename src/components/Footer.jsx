@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-wrapper">
         <footer>
           <div className="col">
-            <img className="footer-logo" src={FooterLogo} />
+            <img className="footer-logo" src={FooterLogo} alt="Footer Logo" />
             <p>
               Welcome to the world of snowboarding excellence, where passion
               meets expertise! I'm Mike Cater, your dedicated snowboard coach,

@@ -1,5 +1,4 @@
 import SnowMan from "../images/main_img.png";
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../pages/home/home.scss";
