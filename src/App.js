@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Router basename="/snowboard-coach">
+      <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
