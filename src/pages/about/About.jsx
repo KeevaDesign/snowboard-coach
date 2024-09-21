@@ -106,15 +106,15 @@ const About = () => {
           <div className="about-me-content">
             <h1>Gallery</h1>
             <div className="gallery">
-              <img src={Img1} />
-              <img src={Img2} />
-              <img src={Img3} />
-              <img src={Img4} />
-              <img src={Img5} />
-              <img src={Img6} />
-              <img src={Img7} />
-              <img src={Img8} />
-              <img src={Img9} />
+              <img src={Img1} alt="Snowboard Practice" />
+              <img src={Img2} alt="Snowboard Practice" />
+              <img src={Img3} alt="Snowboard Practice" />
+              <img src={Img4} alt="Snowboard Practice" />
+              <img src={Img5} alt="Snowboard Practice" />
+              <img src={Img6} alt="Snowboard Practice" />
+              <img src={Img7} alt="Snowboard Practice" />
+              <img src={Img8} alt="Snowboard Practice" />
+              <img src={Img9} alt="Snowboard Practice" />
             </div>
           </div>
         </div>
