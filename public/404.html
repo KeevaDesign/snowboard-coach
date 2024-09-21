@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
+    <title>Page Not Found</title>
+    <meta http-equiv="refresh" content="0; url=/snowboard-coach">
     <script type="text/javascript">
-        window.location.href = "/snowboard-coach" + window.location.pathname;
+        // Redirect all unknown routes to the React app's homepage or the correct path
+        var pathname = window.location.pathname;
+        window.location.href = "/snowboard-coach" + pathname;
     </script>
 </head>
 
 <body>
-
+    <p>Redirecting...</p>
 </body>
 
 </html>
